@@ -46,7 +46,7 @@
       box-shadow: 0px 20px 50px -15px rgba(29, 117, 101, 0.3);
       border-radius: 40px;
       z-index: 5;
-      @media (max-width:$tablet){
+      @media (max-width: $tablet) {
          @include adaptiveValue("padding-left", 25, 15, 2, 991, 15);
          @include adaptiveValue("padding-right", 25, 15, 2, 991, 15);
       }
@@ -62,6 +62,11 @@
    }
    // .top-page__text
    &__text {
+      p {
+         &:not(:last-child) {
+            margin-bottom: rem(15);
+         }
+      }
       &:not(:last-child) {
          @include adaptiveValue("margin-bottom", 40, 25);
       }
@@ -96,13 +101,13 @@
       color: #bdbdbd;
       transition: color 0.3s;
       &:hover {
-         color: #3DDABE;
+         color: #3ddabe;
       }
       &::after {
          position: absolute;
          content: "";
          height: 2px;
-         background-color: #3DDABE;
+         background-color: #3ddabe;
          bottom: 0;
          left: 50%;
          width: 0;

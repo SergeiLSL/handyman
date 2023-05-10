@@ -1,0 +1,50 @@
+// Заголовки, загальні БЕМ блоки та інше...
+.title {
+   // display: inline;
+   position: relative;
+   font-weight: 900;
+   font-size: rem(36);
+   line-height: 138%;
+   text-transform: uppercase;
+   &_big {
+      font-size: rem(46);
+      @include adaptiveValue("font-size", 46, 30);
+      line-height: 136.95%; /* 63/46 */
+   }
+   span {
+      color: #3DDABE;
+   }
+   &::after {
+      position: absolute;
+      content: "";
+      height: rem(4);
+      background-color: #3DDABE;
+      border-radius: rem(10);
+      bottom: -10px;
+      left: 0%;
+      width: rem(70);
+   }
+}
+
+.text {
+   font-size: rem(14);
+   font-weight: 500;
+   line-height: 151.5%;
+}
+
+.btn {
+   display: inline-block;
+   font-weight: 900;
+   font-size: rem(16);
+   line-height: 151.5%; /* 24/16 */
+   text-transform: uppercase;
+   padding: rem(18) rem(45);
+   border-radius: rem(92);
+   background-color: #3DDABE;
+   box-shadow: 0 rem(20) rem(20) rem(-12) rgba(61, 218, 190, 0.4);
+   color: #fff;
+   transition: background-color 0.5s;
+   &:hover {
+      background-color: #36b9a1;
+   }
+}

@@ -9,9 +9,11 @@
 
 //========================================================================================================================================================
 .top-page {
-   position: relative;
+   position: relative;   
+   @include adaptiveValue("padding-top", 0, 70, 2, 1440, 768);
    @media (max-width: $mobile) {
-      padding-top: rem(75);
+      // padding-top: rem(70);
+      @include adaptiveValue("padding-top", 70, 60);
    }
    // .top-page__container
    &__container {
@@ -42,7 +44,7 @@
       @include adaptiveValue("padding-bottom", 50, 15);
       @include adaptiveValue("padding-left", 40, 20, 2, 1440, 992);
       @include adaptiveValue("padding-right", 40, 20, 2, 1440, 992);
-      background: #ffffff;
+      background-color: #ffffff;
       box-shadow: 0px 20px 50px -15px rgba(29, 117, 101, 0.3);
       border-radius: 40px;
       z-index: 5;

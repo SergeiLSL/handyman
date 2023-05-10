@@ -1,4 +1,43 @@
 //====================================================================================================
+.header {
+   position: fixed;
+   @include adaptiveValue("padding-top", 20, 0);
+   @include adaptiveValue("padding-bottom", 20, 0);
+   position: absolute;
+   top: 0;
+   left: 0;
+   width: 100%;
+   z-index: 10;
+   // .header__container
+   &__container {
+   }
+   // .header__logo
+   &__logo {
+      position: relative;
+      font-size: rem(36);
+      line-height: 142.1%; /* 54/38 */
+      text-transform: uppercase;
+      color: #828282;
+      transition: color 0.3s;
+      &:hover {
+         color: #3ddabe;
+      }
+      &::after {
+         position: absolute;
+         content: "";
+         height: 2px;
+         background-color: #3ddabe;
+         bottom: 0;
+         left: 50%;
+         width: 0;
+         transition: all 0.3s;
+      }
+      &:hover::after {
+         left: 0;
+         width: 100%;
+      }
+   }
+}
 
 //====================================================================================================
 

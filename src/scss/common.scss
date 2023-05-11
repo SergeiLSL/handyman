@@ -12,13 +12,13 @@
       line-height: 136.95%; /* 63/46 */
    }
    span {
-      color: #3DDABE;
+      color: #3ddabe;
    }
    &::after {
       position: absolute;
       content: "";
       height: rem(4);
-      background-color: #3DDABE;
+      background-color: #3ddabe;
       border-radius: rem(10);
       bottom: -10px;
       left: 0%;
@@ -40,7 +40,7 @@
    text-transform: uppercase;
    padding: rem(18) rem(45);
    border-radius: rem(92);
-   background-color: #3DDABE;
+   background-color: #3ddabe;
    box-shadow: 0 rem(20) rem(20) rem(-12) rgba(61, 218, 190, 0.4);
    color: #fff;
    transition: background-color 0.5s;
@@ -48,3 +48,133 @@
       background-color: #36b9a1;
    }
 }
+
+//========================================================================================================================================================
+// ? Если раскомментировать этот блок можно изменять рейтинг
+// .rating {
+//    position: relative;
+//    font-size: 30px; /* можно изменять размер звездочек*/
+//    display: inline-block;
+//    &::before {
+//       content: "★★★★★";
+//       display: block;
+//       color: #de8f32;
+//    }
+//    &:not(:last-child) {
+//       margin-bottom: rem(8);
+//    }
+//    // .rating-users__items
+//    &__items {
+//       position: absolute;
+//       width: 100%;
+//       height: 100%;
+//       top: 0;
+//       left: 0;
+//       display: flex;
+//       flex-direction: row-reverse; /* разворрачиваем радио точки в обратном порядке*/
+//       overflow: hidden;
+//    }
+//    // .rating-users__item
+//    &__item {
+//       /* убираем радио точки*/
+//       position: absolute;
+//       width: 0%;
+//       height: 0%;
+//       opacity: 0;
+//       visibility: hidden;
+//       top: 0;
+//       left: 0;
+//       &:checked,
+//       &:checked ~ .rating__label {
+//          color: #ffd300;
+//       }
+//       &:hover,
+//       &:hover ~ .rating__label,
+//       &:checked ~ .rating__label:hover {
+//          /*при наведении на звездочку она меняет цвет*/
+//          color: #ffef9f;
+//       }
+//    }
+//    // .rating-users__label
+//    &__label {
+//       flex: 0 0 20%;
+//       height: 100%;
+//       cursor: pointer; /* превращаем курсор в руку с пальцем*/
+//       color: #f3f2f2; /*цвет звездочки*/ /*цвет звездочки*/
+//       &::before {
+//          /*надо наложить на белые звездочки звездочки с рейтингом*/
+//          content: "★";
+//          display: block;
+//          transition: color 0.3s ease 0s;
+//       }
+//    }
+// }
+//============================================================================================================
+/* ================================ */
+
+.simple-rating {
+   position: relative;
+   font-size: 24px;
+   display: inline-block;
+}
+
+.simple-rating::before {
+   content: "★★★★★";
+   display: block;
+}
+
+.simple-rating__items {
+   position: absolute;
+   width: 100%;
+   height: 100%;
+   top: 0;
+   left: 0;
+   display: -webkit-box;
+   display: -ms-flexbox;
+   display: flex;
+   -webkit-box-orient: horizontal;
+   -webkit-box-direction: reverse;
+   -ms-flex-direction: row-reverse;
+   flex-direction: row-reverse;
+   overflow: hidden;
+}
+
+.simple-rating__item {
+   position: absolute;
+   width: 0%;
+   height: 0%;
+   opacity: 0;
+   visibility: hidden;
+   top: 0;
+   left: 0;
+}
+
+.simple-rating__label {
+   -webkit-box-flex: 0;
+   -ms-flex: 0 0 20%;
+   flex: 0 0 20%;
+   height: 100%;
+   cursor: pointer;
+   color: #f0dbbb;
+}
+
+.simple-rating__label::before {
+   content: "★";
+   display: block;
+   -webkit-transition: color 0.3s ease 0s;
+   -o-transition: color 0.3s ease 0s;
+   transition: color 0.3s ease 0s;
+}
+
+.simple-rating__item:checked,
+.simple-rating__item:checked ~ .simple-rating__label {
+   color: #fbb040;
+}
+
+.simple-rating__label:hover,
+.simple-rating__label:hover ~ .simple-rating__label,
+.simple-rating__label:checked ~ .simple-rating__label:hover {
+   color: #ffef9f;
+}
+
+/* ================================ */

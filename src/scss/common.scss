@@ -47,6 +47,18 @@
    &:hover {
       background-color: #36b9a1;
    }
+   &_w {
+      background: #ffffff;
+      border: 2px solid #3ddabe;
+      border-radius: 92px;
+      color: #3ddabe;
+      box-shadow: none;
+      transition: all 0.5s;
+      &:hover {
+         background-color: #36b9a1;
+         color: #fff;
+      }
+   }
 }
 
 //========================================================================================================================================================

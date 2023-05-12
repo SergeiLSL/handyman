@@ -437,6 +437,86 @@
             </div>
          </section>
 
+         <section class="page__connection connection">
+            <div class="connection__container">
+               <div class="connection__row">
+                  <div class="connection__map">
+                     <img src="@img/contacts/map.svg" alt="map">
+                  </div>
+
+                  <div class="connection__contacts">
+                     <div class="contacts__content">
+                        <h2 class="contacts__title title">
+                           <p>Contact us</p>
+                        </h2>
+                        <div class="contacts__row">
+                           <form action="#" class="contacts__form form">
+                              <div class="form__item">
+                                 <input autocomplete="off" type="text" name="form[]" data-error="Error" data-required
+                                    placeholder="What your name" class="form__input">
+                              </div>
+                              <div class="form__item">
+                                 <input autocomplete="off" type="text" name="form[]" data-error="Error"
+                                    data-required="email" placeholder="Email" class="form__input">
+                              </div>
+                              <div class="form__item">
+                                 <input autocomplete="off" type="text" name="form[]" data-error="Error"
+                                    data-required="phone" placeholder="Number phone*" class="form__input">
+                              </div>
+                              <div class="form__item">
+                                 <textarea autocomplete="off" name="form[]" placeholder="Message" data-error="Error"
+                                    class="form__input"></textarea>
+                              </div>
+                              <div class="form__item">
+                                 <div class="form__buttons">
+                                    <button type="submit" class="form__button btn">Submit</button>
+                                    <div class="form__text">
+                                       <p>Thank you for contacting us! You will get an Answer soon</p>
+                                    </div>
+                                 </div>
+                              </div>
+                           </form>
+                           <div class="contacts__body">
+                              <ul class="contacts__list list-contacts">
+                                 <li class="list-contacts__item">
+                                    <div class="list-contacts__icon">
+                                       <img src="@img/contacts/email.svg" alt="Icon">
+                                    </div>
+                                    <div class="list-contacts__body">
+                                       <a href="mailto:test@gmail.com"
+                                          class="list-contacts__text">test@gmail.com</a>
+                                    </div>
+                                 </li>
+
+                                 <li class="list-contacts__item">
+                                    <div class="list-contacts__icon">
+                                       <img src="@img/contacts/phone.svg" alt="Icon">
+                                    </div>
+                                    <div class="list-contacts__body">
+                                       <a href="tel:3035550105" class="list-contacts__text">(303) 555-0105</a>
+                                    </div>
+                                 </li>
+
+                                 <li class="list-contacts__item">
+                                    <div class="list-contacts__icon">
+                                       <img src="@img/contacts/location.svg" alt="Icon">
+                                    </div>
+                                    <div class="list-contacts__body">
+                                       <a href="" class="list-contacts__text">2715 Ash Dr. San Jose, South Dakota 83475</a>
+                                    </div>
+                                 </li>
+
+
+
+
+                              </ul>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </section>
       </main>
       @@include('html/_footer.htm',{})
    </div>

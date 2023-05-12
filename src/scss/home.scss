@@ -922,11 +922,10 @@
 }
 
 .list-contacts {
-   // font-family: 'TT Hoves';
+   font-family: 'TT Hoves';
    font-weight: 500;
    font-size: rem(14);
    line-height: 121.4%; /* 17/14 */
-   color: #4f4f4f;
    // .list-contacts__item
    &__item {
       display: flex;
@@ -953,6 +952,7 @@
    }
    // .list-contacts__text
    &__text {
+      color: #4f4f4f;
       transition: color 0.3s ease 0s;
       @media (any-hover: hover) {
          &:hover {

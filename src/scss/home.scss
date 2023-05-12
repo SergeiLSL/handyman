@@ -867,7 +867,7 @@
    }
    // .form__input
    &__input {
-      font-size: rem(14);
+      font-size: rem(16);
       line-height: 138.5%;
       color: #4f4f4f;
       background-color: #ffffff;
@@ -877,11 +877,14 @@
       padding: rem(14) rem(18);
       &::placeholder {
          color: #828282;
+         font-size: rem(14);
       }
       &:focus {
-         &::placeholder {
-            color: #828282;
-         }
+         color: #4f4f4f;
+         background-color: #fff;
+         border-color: #bdbdbd;
+         outline: 0;
+         box-shadow: 0 0 0 0.2rem rgba(158, 158, 158, 0.25);
       }
    }
    // .form__buttons
